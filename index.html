@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <style>
-      /* Variabel Warna Global */
+     
       :root {
         --primary-yellow: #FFD700;
         --secondary-orange: #FFA500; 
@@ -22,26 +22,26 @@
         --accent-pink: #ff69b4; 
       }
 
-      /* Base Styles */
+      
       body {
         font-family: 'Poppins', sans-serif;
         color: var(--dark-text);
         background-color: var(--light-bg);
-        overflow-x: hidden; /* Mencegah scroll horizontal */
+        overflow-x: hidden;
       }
 
 
-      /* Section Padding */
+      
       .section-padding {
-        padding: 6rem 1rem; /* Default padding vertikal */
+        padding: 6rem 1rem; 
       }
       @media (min-width: 1024px) {
         .section-padding {
-          padding: 8rem 4rem; /* Padding lebih besar untuk desktop */
+          padding: 8rem 4rem; 
         }
       }
 
-      /* Custom Card Styles */
+      
       .card-fancy {
         border: 3px solid var(--dark-text);
         box-shadow: 8px 8px var(--secondary-orange);
@@ -50,11 +50,11 @@
         overflow: hidden;
       }
       .card-fancy:hover {
-        transform: translateY(-8px) scale(1.02) rotateZ(1deg); /* Slight rotation on hover */
+        transform: translateY(-8px) scale(1.02) rotateZ(1deg); 
         box-shadow: 12px 12px var(--primary-yellow);
       }
 
-      /* Custom Button Styles */
+      
       .btn-fancy {
         border: 2px solid var(--dark-text);
         box-shadow: 5px 5px var(--dark-text);
@@ -69,12 +69,12 @@
         transform: translateY(-2px);
       }
 
-      /* Navbar Styles */
+      
       .navbar-custom {
         background-color: var(--light-bg);
       }
 
-      /* Navbar Link Underline Effect */
+      
       .nav-link-underline {
         position: relative;
       }
@@ -93,7 +93,7 @@
         width: 100%;
       }
 
-      /* Carousel Control Colors (Remix Icons) */
+      
       .carousel-item {
         display: flex;
         flex-direction:column ;
@@ -115,7 +115,7 @@
         filter: invert(30%) sepia(90%) saturate(1000%) hue-rotate(0deg) brightness(80%) contrast(100%);
       }
 
-      /* Custom Keyframe Animations */
+     
       @keyframes fadeInUp {
         from {
           opacity: 0;
@@ -166,7 +166,7 @@
         100% { transform: translateY(0px); }
       }
 
-      /* Apply Animations with Tailwind-like syntax */
+      
       .animate-fade-in-up {
         animation: fadeInUp 0.8s ease-out forwards;
       }
@@ -183,7 +183,6 @@
         animation: float 3s ease-in-out infinite;
       }
 
-      /* Animation Delays (using custom CSS for more fine-grained control) */
       .delay-100 { animation-delay: 0.1s; }
       .delay-200 { animation-delay: 0.2s; }
       .delay-300 { animation-delay: 0.3s; }
@@ -195,15 +194,15 @@
       .delay-900 { animation-delay: 0.9s; }
       .delay-1000 { animation-delay: 1s; }
 
-      /* Ensure animations are not visible until scrolled into view (requires JS) */
+      
       .animated-element {
-        opacity: 0; /* Hidden by default */
+        opacity: 0; 
       }
       .animated-element.is-visible {
-        opacity: 1; /* Visible when in view */
+        opacity: 1; 
       }
 
-      /* Background patterns for diverse design */
+     
       .bg-pattern-dots {
         background-image: radial-gradient(var(--primary-yellow) 1px, transparent 1px);
         background-size: 20px 20px;
